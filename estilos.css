@@ -1,0 +1,150 @@
+:root {
+    --secundario: #3498DB;
+    --primario: #17202A;
+    --primarioclaro: #D1B3C4;
+    --rosa: #E8C2CA;
+    --negro: #403030;
+    --blanco: #ffffff;
+
+    --fuentePrincipal: 'Lora', serif;
+}
+/* esto es para que cada rem sea igual a 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    background: #B2FEFA;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* estas son las variables que estaremos reutilizando */
+
+/* globales */
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--primario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.9rem;
+}
+
+section {
+    margin: 50px 300px;
+    background-color: #FFFFFF80;
+    /* El mismo que antes, blanco con 50% de transparencia.*/
+}
+
+.titulo__secundario {
+    font-size: 2rem;
+}
+
+/* navegacion */
+.navegacion {
+    background-color: var(--primario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+
+
+/* formulario */
+
+.formulario {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.formulario__campo {
+    margin-bottom: 2rem;
+}
+
+.formulario__campo label {
+    color: var(--negro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.formulario__input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.boton--formulario {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1.5rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
